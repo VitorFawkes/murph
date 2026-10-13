@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Murph</title>
+<meta name="description" content="Uma assistente de voz que mora no seu Mac. Você fala, ela entende e responde em voz. Tudo fica no seu computador.">
+<meta name="color-scheme" content="dark">
+<style>
+:root{
+  --fundo:#07070b; --fundo-2:#0f0f16; --linha:#23232f; --ink:#f1efe9; --ink-2:#b9b6ad; --ink-3:#85827a;
+  --ambar:#f2b25c; --ambar-forte:#ffcf8a; --rosa:#ee93a7; --raio:22px;
+  --f-corpo:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",sans-serif;
+  --f-titulo:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--fundo);color:var(--ink);font-family:var(--f-corpo);line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.miolo{width:min(1040px,100%);margin:0 auto;padding:0 16px}
+header.topo{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+.marca{font-family:var(--f-titulo);font-weight:700;font-size:1.25rem;letter-spacing:.01em;text-decoration:none}
+.topo a.baixa-mini{font-size:.95rem;color:var(--ink-2);text-decoration:none;border:1px solid var(--linha);padding:8px 14px;border-radius:999px}
+.topo a.baixa-mini:hover{color:var(--ink);border-color:#3a3a4a}
+
+/* o buraco: a luz entortada em volta de um centro escuro, como a tela dela */
+.palco{position:relative;display:grid;place-items:center;min-height:min(78vh,720px);text-align:center;overflow:hidden;
+  border-radius:var(--raio)}
+.buraco{position:absolute;width:min(560px,92vw);aspect-ratio:1;border-radius:50%;pointer-events:none;
+  background:radial-gradient(circle at 50% 50%,#000 0 31%,transparent 32%),
+    radial-gradient(closest-side,rgba(255,207,138,.0) 55%,rgba(255,207,138,.55) 64%,rgba(242,178,92,.18) 72%,transparent 82%);
+  filter:blur(.4px);animation:pulsa 7s ease-in-out infinite}
+.disco{position:absolute;width:min(980px,150vw);height:min(120px,22vw);border-radius:50%;pointer-events:none;
+  background:radial-gradient(closest-side,rgba(255,207,138,.55),rgba(242,178,92,.18) 45%,transparent 72%);
+  transform:rotate(-8deg);filter:blur(6px);opacity:.75;animation:pulsa 7s ease-in-out infinite reverse}
+@keyframes pulsa{0%,100%{opacity:.85;transform:scale(1) rotate(var(--g,0deg))}50%{opacity:1;transform:scale(1.03) rotate(var(--g,0deg))}}
+.disco{--g:-8deg}
+@media (prefers-reduced-motion:reduce){.buraco,.disco{animation:none}}
+.texto{position:relative;z-index:1;padding:48px 16px;max-width:680px}
+h1{font-family:var(--f-titulo);font-size:clamp(2.1rem,6vw,3.6rem);line-height:1.05;margin:0 0 18px;letter-spacing:-.02em;
+  text-shadow:0 2px 30px rgba(0,0,0,.9)}
+.sub{font-size:clamp(1.05rem,2.4vw,1.25rem);color:var(--ink-2);margin:0 auto 30px;max-width:34em;text-shadow:0 1px 18px #000}
+.baixar{display:inline-flex;align-items:center;gap:10px;min-height:54px;padding:14px 28px;border-radius:999px;
+  background:var(--ambar);color:#1a1206;font-weight:700;font-size:1.1rem;text-decoration:none;
+  box-shadow:0 10px 40px -10px rgba(242,178,92,.6);transition:transform .2s cubic-bezier(.3,1.4,.5,1),background-color .15s}
+.baixar:hover{transform:translateY(-2px);background:var(--ambar-forte)}
+.baixar:focus-visible,.topo a:focus-visible{outline:3px solid var(--ambar-forte);outline-offset:3px}
+.baixar svg{width:20px;height:20px}
+.req{margin:16px 0 0;font-size:.92rem;color:var(--ink-2);text-shadow:0 1px 10px #000,0 0 3px #000}
+
+section.bloco{padding:72px 0 8px}
+h2{font-family:var(--f-titulo);font-size:clamp(1.5rem,3.4vw,2rem);margin:0 0 22px;letter-spacing:-.01em}
+.passos{list-style:none;margin:0;padding:0;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.passos li,.cartao{background:var(--fundo-2);border:1px solid var(--linha);border-radius:18px;padding:22px}
+.passos b{display:block;font-size:1.05rem;margin-bottom:6px}
+.passos .n{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;margin-bottom:12px;
+  background:rgba(242,178,92,.14);color:var(--ambar-forte);font-weight:700}
+.passos p,.cartao p{margin:0;color:var(--ink-2)}
+.grade{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.cartao h3{margin:0 0 8px;font-size:1.05rem}
+.lista{margin:0;padding-left:18px;color:var(--ink-2)}
+.lista li{margin:4px 0}
+.nota{color:var(--ink-3);font-size:.92rem;margin-top:14px}
+footer{padding:72px 0 40px;color:var(--ink-3);font-size:.9rem;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
+footer a{color:var(--ink-2)}
+</style>
+</head>
+<body>
+<div class="miolo">
+  <header class="topo">
+    <a class="marca" href="./">Murph</a>
+    <a class="baixa-mini" href="https://github.com/VitorFawkes/murph/releases/latest/download/Murph.dmg">Baixar</a>
+  </header>
+
+  <main>
+    <div class="palco">
+      <div class="disco" aria-hidden="true"></div>
+      <div class="buraco" aria-hidden="true"></div>
+      <div class="texto">
+        <h1>Uma assistente de voz que mora no seu Mac</h1>
+        <p class="sub">Você chama pelo nome e fala. Ela entende, pensa e responde em voz. Tudo o que ela guarda fica no seu computador.</p>
+        <a class="baixar" href="https://github.com/VitorFawkes/murph/releases/latest/download/Murph.dmg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg>
+          Baixar para Mac
+        </a>
+        <p class="req" id="versao">Mac com chip da Apple e macOS 26 · grátis</p>
+      </div>
+    </div>
+
+    <section class="bloco" aria-labelledby="h-instalar">
+      <h2 id="h-instalar">Instalar leva um minuto</h2>
+      <ol class="passos">
+        <li><span class="n">1</span><b>Abra o Murph.dmg</b><p>Ele aparece em Downloads depois de baixar.</p></li>
+        <li><span class="n">2</span><b>Arraste a Murph para Aplicativos</b><p>Assim ela abre sempre e se atualiza sozinha.</p></li>
+        <li><span class="n">3</span><b>Abra e siga os primeiros passos</b><p>O seu nome, o nome dela, o microfone e o cérebro que ela usa.</p></li>
+      </ol>
+    </section>
+
+    <section class="bloco" aria-labelledby="h-faz">
+      <h2 id="h-faz">O que ela faz</h2>
+      <div class="grade">
+        <div class="cartao"><h3>No dia a dia</h3><ul class="lista"><li>Anota tarefas e lembra na hora certa</li><li>Guarda o que importa e lembra depois</li><li>Combina lembretes toda semana</li></ul></div>
+        <div class="cartao"><h3>No seu Mac</h3><ul class="lista"><li>Olha a tela quando você pede</li><li>Acha arquivos pelo nome</li><li>Abre sites e programas</li></ul></div>
+        <div class="cartao"><h3>Nas suas ferramentas</h3><ul class="lista"><li>Notion, Linear, Jira, ClickUp, monday.com, Airtable, Todoist, Canva, Stripe e Zapier</li><li>Você entra na própria ferramenta: a senha não passa pela Murph</li><li>Ler é livre; para mudar algo, ela pergunta antes</li></ul></div>
+        <div class="cartao"><h3>No WhatsApp</h3><ul class="lista"><li>Lê as conversas e escreve no seu jeito</li><li>Nada sai sem você tocar em Aprovar</li></ul></div>
+      </div>
+    </section>
+
+    <section class="bloco" aria-labelledby="h-seu">
+      <h2 id="h-seu">Tudo seu, do seu jeito</h2>
+      <div class="grade">
+        <div class="cartao"><h3>Fica no seu computador</h3><p>A memória, as conversas e os ajustes moram no seu Mac. As chaves ficam no cofre de senhas dele.</p></div>
+        <div class="cartao"><h3>Você liga cada acesso</h3><p>Tela, arquivos, WhatsApp e ferramentas nascem desligados. Só você liga, e desligar vale na hora.</p></div>
+        <div class="cartao"><h3>O cérebro é seu</h3><p>Ela pensa pela sua assinatura do Claude, ou pela sua chave da Anthropic ou da OpenAI, com teto de gasto.</p></div>
+        <div class="cartao"><h3>Sempre atualizada</h3><p>Ela se atualiza sozinha enquanto dorme, ou só quando você tocar em Atualizar. Você escolhe em Ajustes.</p></div>
+      </div>
+      <p class="nota">Por enquanto, só para Mac. A versão para Windows vem depois.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>Murph, assistente de voz.</span>
+    <a href="https://github.com/VitorFawkes/murph/releases">Todas as versões</a>
+  </footer>
+</div>
+<script>
+/* a versão publicada, do mesmo arquivo que o app confere */
+fetch("versao.json", {cache: "no-store"}).then(function(r){ return r.ok ? r.json() : null; }).then(function(v){
+  if (v && v.versao) document.getElementById("versao").textContent = "Versão " + v.versao + " · Mac com chip da Apple e macOS 26 · grátis";
+}).catch(function(){});
+</script>
+</body>
+</html>

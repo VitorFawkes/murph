@@ -1,0 +1,6 @@
+{
+ "versao": "0.4.0",
+ "sha256": "35a474ba84cdcc772c551f547c538be58ed702e378eb93c491db39f718c04cb7",
+ "notas": "Primeira versão para todos: Suas ferramentas, atualização sozinha ou no toque, e o instalador conferido pela Apple.",
+ "dmg": "https://github.com/VitorFawkes/murph/releases/download/v0.4.0/Murph.dmg"
+}
