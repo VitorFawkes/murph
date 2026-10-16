@@ -1,6 +1,6 @@
 {
- "versao": "0.4.0",
- "sha256": "35a474ba84cdcc772c551f547c538be58ed702e378eb93c491db39f718c04cb7",
- "notas": "Primeira versão para todos: Suas ferramentas, atualização sozinha ou no toque, e o instalador conferido pela Apple.",
- "dmg": "https://github.com/VitorFawkes/murph/releases/download/v0.4.0/Murph.dmg"
+ "versao": "0.5.0",
+ "sha256": "ae646d84e240827c99cf4d3432441cf7636c6d660977a85d9d3ea5f4b9811e74",
+ "notas": "Ligações, um Chrome só dela para trabalhos em sites, rotinas, a carinha e a tela nova.",
+ "dmg": "https://github.com/VitorFawkes/murph/releases/download/v0.5.0/Murph.dmg"
 }

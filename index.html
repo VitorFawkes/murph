@@ -55,7 +55,7 @@ h2{font-family:var(--f-titulo);font-size:clamp(1.5rem,3.4vw,2rem);margin:0 0 22p
 .passos .n{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;margin-bottom:12px;
   background:rgba(242,178,92,.14);color:var(--ambar-forte);font-weight:700}
 .passos p,.cartao p{margin:0;color:var(--ink-2)}
-.grade{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.grade{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr))}
 .cartao h3{margin:0 0 8px;font-size:1.05rem}
 .lista{margin:0;padding-left:18px;color:var(--ink-2)}
 .lista li{margin:4px 0}
@@ -91,7 +91,7 @@ footer a{color:var(--ink-2)}
       <ol class="passos">
         <li><span class="n">1</span><b>Abra o Murph.dmg</b><p>Ele aparece em Downloads depois de baixar.</p></li>
         <li><span class="n">2</span><b>Arraste a Murph para Aplicativos</b><p>Assim ela abre sempre e se atualiza sozinha.</p></li>
-        <li><span class="n">3</span><b>Abra e siga os primeiros passos</b><p>O seu nome, o nome dela, o microfone e o cérebro que ela usa.</p></li>
+        <li><span class="n">3</span><b>Abra e siga o Comece aqui</b><p>Seis telas curtas: os nomes e a voz, o cérebro, as senhas, os sites e a memória.</p></li>
       </ol>
     </section>
 
@@ -103,6 +103,17 @@ footer a{color:var(--ink-2)}
         <div class="cartao"><h3>Nas suas ferramentas</h3><ul class="lista"><li>Notion, Linear, Jira, ClickUp, monday.com, Airtable, Todoist, Canva, Stripe e Zapier</li><li>Você entra na própria ferramenta: a senha não passa pela Murph</li><li>Ler é livre; para mudar algo, ela pergunta antes</li></ul></div>
         <div class="cartao"><h3>No WhatsApp</h3><ul class="lista"><li>Lê as conversas e escreve no seu jeito</li><li>Nada sai sem você tocar em Aprovar</li></ul></div>
       </div>
+    </section>
+
+    <section class="bloco" aria-labelledby="h-novo">
+      <h2 id="h-novo">Novo na versão 0.5.0</h2>
+      <div class="grade">
+        <div class="cartao"><h3>Para começar</h3><ul class="lista"><li>Comece aqui: seis telas curtas na primeira vez, uma pergunta por tela</li><li>Ligações, no menu: tudo o que ela usa num lugar só</li><li>Trazer do seu Chrome: senhas, favoritos e logins, sem ela ler nenhuma senha</li></ul></div>
+        <div class="cartao"><h3>Na internet</h3><ul class="lista"><li>Um Chrome só dela faz trabalhos em sites enquanto você usa o Mac</li><li>Pagar, mandar e apagar sempre esperam o seu ok</li><li>Registro: os trabalhos de 30 dias, com a foto de cada passo</li><li>Rotinas: "todo dia às 9h, vê tal site e me conta"</li><li>Sites: a lista com o logo de cada um e se ela já entrou</li><li>Contas Google no Chrome dela: você diz qual é pessoal e qual é de trabalho</li></ul></div>
+        <div class="cartao"><h3>Na tela</h3><ul class="lista"><li>A carinha: um rosto que reage quando ela ouve, pensa e fala</li><li>Letras, botões e menus novos, mais fáceis de ler</li><li>Pôs o AirPods: ela passa a ouvir e falar por ele</li><li>Para aprovar diz cada tipo de pedido pelo nome</li><li>O PDF de um link abre na tela dela</li></ul></div>
+        <div class="cartao"><h3>No WhatsApp e nos agentes</h3><ul class="lista"><li>"Sim, manda", falado, aprova a mensagem que ela mostrou</li><li>Ela abre o áudio ou a foto que você disser: o de ontem, o das 19h, o penúltimo</li><li>Nos agentes do Claude Code, ela vê também as conversas paradas</li></ul></div>
+      </div>
+      <p class="nota">O Navegador dela, o Navegar e abrir programas (que abre o PDF de um link) e os Agentes do Claude Code nascem desligados: você liga em Ajustes, Acessos. O WhatsApp liga em Ajustes, WhatsApp. O Navegador dela precisa do Google Chrome instalado. Quem já tem a Murph recebe esta versão sozinha, enquanto ela dorme, ou no toque em Atualizar.</p>
     </section>
 
     <section class="bloco" aria-labelledby="h-seu">
