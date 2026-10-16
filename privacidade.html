@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacidade · Murph</title>
+<meta name="description" content="O que o app da Murph para iPhone usa, para onde vai e o que fica no aparelho.">
+<meta name="color-scheme" content="dark">
+<style>
+:root{
+  --fundo:#07070b; --fundo-2:#0f0f16; --linha:#23232f; --ink:#f1efe9; --ink-2:#b9b6ad; --ink-3:#85827a;
+  --ambar:#f2b25c; --ambar-forte:#ffcf8a; --raio:22px;
+  --f-corpo:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",sans-serif;
+  --f-titulo:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--fundo);color:var(--ink);font-family:var(--f-corpo);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--ambar-forte)}
+a:focus-visible{outline:3px solid var(--ambar-forte);outline-offset:3px}
+.miolo{width:min(760px,100%);margin:0 auto;padding:0 16px}
+header.topo{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+.marca{font-family:var(--f-titulo);font-weight:700;font-size:1.25rem;letter-spacing:.01em;text-decoration:none;color:var(--ink)}
+h1{font-family:var(--f-titulo);font-size:clamp(2rem,6vw,3rem);line-height:1.08;margin:40px 0 12px;letter-spacing:-.02em}
+.data{color:var(--ink-3);margin:0 0 36px}
+.resumo{font-size:1.15rem;color:var(--ink-2);margin:0 0 40px}
+section{background:var(--fundo-2);border:1px solid var(--linha);border-radius:18px;padding:24px;margin:0 0 14px}
+h2{font-family:var(--f-titulo);font-size:1.2rem;margin:0 0 10px}
+section p{margin:0 0 10px;color:var(--ink-2)}
+section p:last-child{margin-bottom:0}
+ul{margin:0;padding-left:20px;color:var(--ink-2)}
+li{margin:6px 0}
+li b{color:var(--ink)}
+footer{padding:56px 0 40px;color:var(--ink-3);font-size:.9rem;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
+footer a{color:var(--ink-2)}
+</style>
+</head>
+<body>
+<div class="miolo">
+  <header class="topo">
+    <a class="marca" href="./">Murph</a>
+  </header>
+
+  <main>
+    <h1>Privacidade do app Murph para iPhone</h1>
+    <p class="data">Atualizada em 16 de outubro de 2026.</p>
+    <p class="resumo">O app do iPhone conversa com a Murph que mora no seu Mac. Ele não tem conta nossa, não mostra anúncios e não acompanha o que você faz.</p>
+
+    <section aria-labelledby="h-usa">
+      <h2 id="h-usa">O que o app usa no iPhone</h2>
+      <ul>
+        <li><b>Microfone:</b> só quando você chama a Murph: segurando ou apertando o botão de falar, pela Siri, pelo Botão de Ação ou pela Central de Controle. Ele fecha quando você solta ou para de falar.</li>
+        <li><b>Reconhecimento de fala:</b> o iPhone escreve o que você disse no próprio aparelho, com o recurso da Apple. Em aparelho que não faz isso sozinho, o som da sua voz vai ao reconhecimento de fala da Apple, que segue a política da Apple. Para a Murph, vai só o texto.</li>
+        <li><b>Rede de casa:</b> para achar o seu Mac.</li>
+        <li><b>Notificações:</b> os avisos e lembretes que o seu Mac manda chegam pelo serviço de notificações da Apple, passando pelo servidor da Murph.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="h-vai">
+      <h2 id="h-vai">Para onde vai o que você diz</h2>
+      <ul>
+        <li><b>Para o seu Mac:</b> vai o texto do que você disse, assinado com uma chave que só o seu iPhone e o seu Mac têm. A resposta volta em texto e na voz dela.</li>
+        <li><b>Ao ligar o celular:</b> o seu Mac recebe o nome e o modelo do iPhone, a versão do iOS e o endereço de avisos que a Apple dá ao app, para mostrar o celular em Ajustes e mandar os avisos.</li>
+        <li><b>Em casa:</b> direto pela rede, do iPhone ao Mac.</li>
+        <li><b>Fora de casa:</b> por um servidor de passagem da Murph, com conexão segura. Ele não guarda o que passa. Guarda só o registro técnico de cada passagem: o código do Mac, se deu certo e quanto tempo levou.</li>
+        <li><b>Os avisos:</b> o texto de cada aviso vai do seu Mac ao servidor da Murph e dele ao serviço de notificações da Apple, sem ficar guardado. O registro técnico de cada aviso guarda o código do Mac, o começo do endereço de avisos do iPhone e se deu certo.</li>
+        <li><b>No Mac:</b> a Murph responde com a conta de inteligência artificial e o serviço de voz que você ligou nela. Do Mac em diante, vale o que você escolheu lá.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="h-fica">
+      <h2 id="h-fica">O que fica no iPhone</h2>
+      <ul>
+        <li>A chave da ligação com o seu Mac, no cofre de senhas do iPhone, só neste aparelho.</li>
+        <li>O nome e o endereço do seu Mac, nos ajustes do app.</li>
+        <li>A conversa do dia, o texto que você deixou escrito sem mandar e os combinados com hora, para os alarmes tocarem.</li>
+      </ul>
+      <p>Tirar o celular da Murph, no app ou no Mac, desfaz a ligação dos dois lados. Apagar o app apaga a conversa e os ajustes. A chave pode ficar no cofre do iPhone, mas não vale mais nada depois que o celular foi tirado.</p>
+    </section>
+
+    <section aria-labelledby="h-nao">
+      <h2 id="h-nao">O que a Murph não faz</h2>
+      <ul>
+        <li>Não vende nem empresta dados a ninguém.</li>
+        <li>Não usa anúncios, rastreamento nem medição de uso.</li>
+        <li>Não pede conta, e-mail ou telefone.</li>
+        <li>Não é feita para crianças.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="h-fala">
+      <h2 id="h-fala">Fale com a gente</h2>
+      <p>Dúvida ou pedido sobre os seus dados: <a href="mailto:vitorgambetti@gmail.com">vitorgambetti@gmail.com</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>Murph, assistente de voz.</span>
+    <a href="./">Página da Murph</a>
+  </footer>
+</div>
+</body>
+</html>
