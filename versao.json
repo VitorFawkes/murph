@@ -1,6 +1,6 @@
 {
- "versao": "0.6.1",
- "sha256": "4ec15836df7cd66d1b7c7c8f0087dcda404fee37ec57bbf721e10d85aabc96fd",
- "notas": "Entrar com o ChatGPT ou com o Claude em um toque, com o login oficial no navegador.",
- "dmg": "https://github.com/VitorFawkes/murph/releases/download/v0.6.1/Murph.dmg"
+ "versao": "0.6.3",
+ "sha256": "6fcf9839a299911f0418d5de2b5d02d35b9be394e2de91a2889303288c3a22ce",
+ "notas": "Abrir o Chrome dela e usar com as suas mãos, com uma caixa ao lado para pedir a ela por escrito.",
+ "dmg": "https://github.com/VitorFawkes/murph/releases/download/v0.6.3/Murph.dmg"
 }
