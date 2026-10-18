@@ -1,6 +1,6 @@
 {
- "versao": "0.6.3",
- "sha256": "6fcf9839a299911f0418d5de2b5d02d35b9be394e2de91a2889303288c3a22ce",
- "notas": "Abrir o Chrome dela e usar com as suas mãos, com uma caixa ao lado para pedir a ela por escrito.",
- "dmg": "https://github.com/VitorFawkes/murph/releases/download/v0.6.3/Murph.dmg"
+ "versao": "0.6.4",
+ "sha256": "28f02253bcaef23b56af09f83c5b3ac41a2d19540781f38dd3a3796c5ea3c468",
+ "notas": "Ela entende o pedido pelo sentido: abrir o Chrome dela, entrar na conta e o resto, sem frase exata.",
+ "dmg": "https://github.com/VitorFawkes/murph/releases/download/v0.6.4/Murph.dmg"
 }
