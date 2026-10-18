@@ -1,6 +1,6 @@
 {
- "versao": "0.6.0",
- "sha256": "d31efb2f9390b85ab6230a04f92d242004f7bae991b75b017dd5f7178eac99cb",
- "notas": "Entrar com o ChatGPT em um toque, sem Terminal; o ouvido no próprio Mac, de graça; ela acorda pelo nome mais rápido.",
- "dmg": "https://github.com/VitorFawkes/murph/releases/download/v0.6.0/Murph.dmg"
+ "versao": "0.6.1",
+ "sha256": "4ec15836df7cd66d1b7c7c8f0087dcda404fee37ec57bbf721e10d85aabc96fd",
+ "notas": "Entrar com o ChatGPT ou com o Claude em um toque; o app do iPhone responde também com o Mac fechado.",
+ "dmg": "https://github.com/VitorFawkes/murph/releases/download/v0.6.1/Murph.dmg"
 }
