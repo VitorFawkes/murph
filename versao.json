@@ -1,6 +1,6 @@
 {
  "versao": "0.6.1",
  "sha256": "4ec15836df7cd66d1b7c7c8f0087dcda404fee37ec57bbf721e10d85aabc96fd",
- "notas": "Entrar com o ChatGPT ou com o Claude em um toque; o app do iPhone responde também com o Mac fechado.",
+ "notas": "Entrar com o ChatGPT ou com o Claude em um toque, com o login oficial no navegador.",
  "dmg": "https://github.com/VitorFawkes/murph/releases/download/v0.6.1/Murph.dmg"
 }
