@@ -1,6 +1,6 @@
 {
- "versao": "0.5.1",
- "sha256": "b481791e0ebfd366c53580233a1058ebf70b5280c2b4a91f150e86c0b96a5b17",
- "notas": "Celular, em Ajustes > Acessos: liga o app da Murph no iPhone, que está em teste pelo TestFlight. Em casa ele fala com ela pelo Wi-Fi, e fora de casa por um servidor da Murph.",
- "dmg": "https://github.com/VitorFawkes/murph/releases/download/v0.5.1/Murph.dmg"
+ "versao": "0.6.0",
+ "sha256": "d31efb2f9390b85ab6230a04f92d242004f7bae991b75b017dd5f7178eac99cb",
+ "notas": "Entrar com o ChatGPT em um toque, sem Terminal; o ouvido no próprio Mac, de graça; ela acorda pelo nome mais rápido.",
+ "dmg": "https://github.com/VitorFawkes/murph/releases/download/v0.6.0/Murph.dmg"
 }
