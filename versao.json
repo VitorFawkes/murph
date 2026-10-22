@@ -1,6 +1,6 @@
 {
- "versao": "0.6.4",
- "sha256": "28f02253bcaef23b56af09f83c5b3ac41a2d19540781f38dd3a3796c5ea3c468",
- "notas": "Ela entende o pedido pelo sentido: abrir o Chrome dela, entrar na conta e o resto, sem frase exata.",
- "dmg": "https://github.com/VitorFawkes/murph/releases/download/v0.6.4/Murph.dmg"
+ "versao": "0.6.5",
+ "sha256": "61c8c0e1651329e30a883adfc5e4024224059d024d58603d8de95930599a72d7",
+ "notas": "Ela não fala mais por cima de você, e dá para mudar o texto que ela escreveu antes de aprovar. O Chrome dela fica desligado por enquanto, com o Registro, as Rotinas e os Sites.",
+ "dmg": "https://github.com/VitorFawkes/murph/releases/download/v0.6.5/Murph.dmg"
 }
